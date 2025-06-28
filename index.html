@@ -1,0 +1,68 @@
+<html lang="id"><head><meta name="emotion-insertion-point" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>to my @soulatte</title>
+  <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+</head>
+
+<body>
+  <div class="background-decor bg-[url('/img/background.gif')] bg-cover bg-center bg-no-repeat">
+      <img src="img/bunga.png" class="flower" style="left: 10%; animation-delay: 0s; width: 40px;">
+      <img src="img/bunga.png" class="flower" style="left: 70%; animation-delay: 3s; width: 50px;">
+      <img src="img/kupu.png" class="butterfly" style="left: 30%; top: 80%; width: 60px; animation-delay: 1s;">
+      <img src="img/kupu.png" class="butterfly" style="left: 80%; top: 90%; width: 40px; animation-delay: 5s;">
+  </div>
+
+  <div class="container">
+      <!-- Popup page -->
+      <div id="popup" class="active">
+          <h2 id="popupText">sorry if it sounds cheesy, i just can't help it when it's someone i really love, @soulatte &lt;3</h2>
+          <button onclick="nextPopup()">tap!</button>
+      </div>
+
+      <!-- Question page -->
+      <div id="questionPage">
+          <h2>wanna see the prettiest girl who stole my heart just with her smilee🫢?</h2>
+          <div>
+      <button onclick="goToGallery()">Mau</button>
+
+      <button id="noBtn" onclick="moveNoBtn()">tidaa</button>
+          </div>
+      </div>
+
+      <!-- Gallery page -->
+      <div id="galleryPage">
+          <!-- Audio with autoplay and muted -->
+          <audio id="audio" autoplay="" muted="" loop="">
+              <source src="img/lagu.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+          <h2><b>the prettiest girl i’ve ever met 💗💞</b></h2>
+          <div class="gallery" style="transform: translateX(-200%);">
+              <!-- Gambar-gambar foto -->
+              <img src="img/1.jpeg" alt="Foto kamu">
+              <img src="img/2.jpeg" alt="Foto kamu">
+              <img src="img/3.jpeg" alt="Foto kamu">
+              <img src="img/4.jpeg" alt="Foto kamu">
+              <img src="img/5.jpeg" alt="Foto kamu">
+              <img src="img/6.jpeg" alt="Foto kamu">
+          </div>
+      </div>
+  </div>
+
+  <!-- Menyertakan file JavaScript -->
+  <script src="./js/scripts.js"></script>
+
+  <script>
+      // Fungsi untuk memulai audio setelah interaksi pengguna (untuk perangkat mobile)
+      document.addEventListener("click", function () {
+          var audio = document.getElementById('audio');
+          audio.muted = false; // Matikan mute untuk memulai suara setelah klik
+          audio.play();        // Memulai audio
+      });
+  </script>
+
+
+<div class="fps-extension is-hidden" style="width: 190px; height: 70px; top: 10px; right: 10px;"><canvas width="190" height="70"></canvas></div><div id="quick-start-container"></div></body></html>
